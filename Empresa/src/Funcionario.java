@@ -1,4 +1,4 @@
-public class Funcionario {
+public abstract class Funcionario {
     private String nome;
     private String departamento;
     protected double salario;
@@ -43,31 +43,11 @@ public class Funcionario {
 		this.estaNaEmpresa = estaNaEmpresa;
 	}
     
-	public boolean calculaSalario(){
-		if(this.salario <= 1000.00) {
-			this.salario = this.salario - (this.salario * 0.06);
-			return true;
-		}else {
-			System.out.println("Valores Inválidos!!");
-			return false;
-		} 
-    }
+	public abstract boolean calculaSalario();
 
-    //Sobrecarga de Método
-    public boolean calculaSalario(double horaExtra){
-    	if(this.salario <= 1000.00) {
-	        double valorHoraExtra = (this.salario/30) / 8 * horaExtra;
-	        this.salario = this.salario - (this.salario * 0.06) + valorHoraExtra;
-	        return true;
-    	}else {
-			System.out.println("Valores Inválidos!!");
-			return false;
-    	}
-    }
-
-    public double bonifica (){
-    	return this.salario * 0.10;
-    }
+    public abstract boolean calculaSalario(double horaExtra);
+    
+    public abstract double bonifica();
 
     public void demite(){
         estaNaEmpresa = false;

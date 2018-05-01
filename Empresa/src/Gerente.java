@@ -23,30 +23,31 @@ public class Gerente extends Funcionario{
     	}
     }
     
-    //reescrita do metodo da classe funcionario
-    public double bonifica (){
-    	return this.salario * 0.15;
-    }
-    
+    @Override
 	public boolean calculaSalario(){
 		if(this.salario > 1000.00) {
 			this.salario = this.salario - (this.salario * 0.11);
 			return true;
 		}else {
-			System.out.println("Valores Inválidos!!");
+			System.out.println("Valores Invï¿½lidos!!");
 			return false;
 		} 
     }
 
-    //Sobrecarga de Método
+    @Override
     public boolean calculaSalario(double horaExtra){
     	if(this.salario > 1000.00) {
 	        double valorHoraExtra = (this.salario/30) / 8 * horaExtra;
 	        this.salario = this.salario - (this.salario * 0.11) + valorHoraExtra;
 	        return true;
     	}else {
-			System.out.println("Valores Inválidos!!");
+			System.out.println("Valores Invï¿½lidos!!");
 			return false;
     	}
+    }
+    
+    @Override
+    public double bonifica (){
+    	return this.salario * 0.15;
     }
 }

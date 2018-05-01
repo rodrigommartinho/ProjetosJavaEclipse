@@ -1,10 +1,7 @@
 public class Programa {
 
 	public static void main(String[] args) {
-		Pessoa pessoa = new Pessoa();
-		pessoa.setNome("Joao");
-		pessoa.setEndereco("Alameda Jau");
-		
+
 		Fornecedor fornecedor = new Fornecedor();
 		fornecedor.setNome("Alexandre");
 		fornecedor.setEndereco("Alameda Campinhas");
@@ -15,9 +12,6 @@ public class Programa {
 		cliente.setEndereco("Avenida Paulista");
 		cliente.setCpf("000.000.000-00");
 		
-		System.out.println("Nome Pessoa::" + pessoa.getNome());
-		System.out.println("Endereço Pessoa::" + pessoa.getEndereco());
-		System.out.println("----------------------------------");
 		System.out.println("Nome Fornecedor::" + fornecedor.getNome());
 		System.out.println("Endereço Fornecedor::" + fornecedor.getEndereco());
 		System.out.println("CNPJ Fornecedor::" + fornecedor.getCnpj());
