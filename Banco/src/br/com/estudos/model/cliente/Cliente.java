@@ -1,3 +1,5 @@
+package br.com.estudos.model.cliente;
+
 public class Cliente {
 	private String nome;
 	private String cpf;

@@ -1,3 +1,6 @@
+package br.com.estudos.model.conta;
+import br.com.estudos.model.cliente.Cliente;
+
 public class Conta {
 	private int numeroConta;
 	private Cliente titular;

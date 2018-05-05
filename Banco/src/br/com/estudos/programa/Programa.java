@@ -1,3 +1,7 @@
+package br.com.estudos.programa;
+import br.com.estudos.model.cliente.Cliente;
+import br.com.estudos.model.conta.Conta;
+
 public class Programa {
 	public static void main(String[] args) {
 		Cliente cliente = new Cliente();

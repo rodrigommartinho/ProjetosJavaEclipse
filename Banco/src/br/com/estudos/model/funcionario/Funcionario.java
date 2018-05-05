@@ -1,3 +1,5 @@
+package br.com.estudos.model.funcionario;
+
 public class Funcionario {
     private String nome;
     private String departamento;
@@ -47,7 +49,7 @@ public class Funcionario {
         this.salario = salario - (salario * 0.06);
     }
 
-    //Sobrecarga de Método
+    //Sobrecarga de Mï¿½todo
     public void calculaSalario(double salario, double horaExtra){
         double valorHoraExtra = (salario/30) / 8 * horaExtra;
         this.salario = salario - (salario * 0.06) + valorHoraExtra;
