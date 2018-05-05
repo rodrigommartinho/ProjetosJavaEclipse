@@ -1,3 +1,7 @@
+/**
+     * Documentação da Classe Funcionario da Empresa
+     * @author rodrigo
+     */
 public abstract class Funcionario {
     private String nome;
     private String departamento;
@@ -6,6 +10,11 @@ public abstract class Funcionario {
     private String rg;
     private boolean estaNaEmpresa;
     
+    /**
+     * Método get do Atributo Nome
+     * @return nome
+     * @author rodrigo
+     */
 	public String getNome() {
 		return nome;
 	}
